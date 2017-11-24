@@ -1,0 +1,139 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @samludford
+ Sign out
+ Unwatch 1
+  Star 0  Fork 0 samludford/3D_visualiser_1
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Branch: master Find file Copy path3D_visualiser_1/.gitignore
+87379d2  9 hours ago
+ Sam Ludford app
+0 contributors
+RawBlameHistory     
+110 lines (92 sloc)  1.11 KB
+###########################
+# ignore generated binaries
+###########################
+
+/bin/*
+!/bin/data/ # uncomment to NOT ignore data stuff
+/bin/data/settings.xml
+#########
+# general
+#########
+
+[Bb]uild/
+[Oo]bj/
+*.o
+[Dd]ebug*/
+[Rr]elease*/
+*.mode*
+*.app/
+*.pyc
+.svn/
+*.log
+
+########################
+# IDE files which should
+# be ignored
+########################
+
+# XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+# XCode 4
+xcuserdata
+*.xcworkspace
+
+# Code::Blocks
+*.depend
+*.layout
+*.user
+*.user.*
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+ipch/
+
+# Eclipse
+.metadata
+local.properties
+.externalToolBuilders
+
+##################
+# operating system
+##################
+
+# Linux
+*~
+# KDE
+.directory
+.AppleDouble
+
+# OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+# Windows
+# Image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Android
+.csettings
+
+
+# OS X Finder
+.DS_Store
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# Build products
+build/
+*.o
+*.LinkFileList
+*.hmap
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
