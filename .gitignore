@@ -21,7 +21,7 @@ RawBlameHistory
 ###########################
 
 /bin/*
-!/bin/data/ # uncomment to NOT ignore data stuff
+/bin/data/ # uncomment to NOT ignore data stuff
 /bin/data/settings.xml
 #########
 # general

@@ -2,6 +2,11 @@
 
 #include "ofMain.h"
 #include "ofxMaxim.h"
+#include "maxiGrains.h"
+#include <sys/time.h>
+
+typedef hannWinFunctor grainPlayerWin;
+
 
 class ofApp : public ofBaseApp{
 
@@ -20,15 +25,26 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    // Audio output and input methods
-    
         void audioOut(float * output, int bufferSize, int nChannels);
         void audioIn(float * input, int bufferSize, int nChannels);
-     
-     
     
-    int		bufferSize; /* buffer size */
-    int		sampleRate;
+    bool saving {false};
+    
+    
+        double wave,sample,outputs[2];
+        maxiSample samp;
+        vector<maxiTimestretch<grainPlayerWin>*> stretches;
+        maxiMix mymix;
+        maxiTimestretch<grainPlayerWin> *ts;
+        double speed, grainLength;
+        int current;
+        double pos;
+    
+        ofxMaxiFFT fft;
+        ofxMaxiFFTOctaveAnalyzer oct;
+
+    
+        int		bufferSize; /* buffer size */
+        int		sampleRate;
 		
-    maxiOsc myOsc;
 };
